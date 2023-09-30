@@ -1137,7 +1137,7 @@ const ocean = [
   "Marlin",
 ];
 
-const large = new Array(100).fill("!nemo");
+const large = new Array(10).fill("!nemo");
 
 function findingNemo(array) {
   let time0 = performance.now();
@@ -1153,3 +1153,14 @@ function findingNemo(array) {
 }
 
 findingNemo(large); // 0(n) ==> Linear Time
+
+// const boxes = ["A", "B"];
+
+// const findingNemo_2 = (boxes) => {
+//   boxes.for (let i = 0; i < array.length; i++)
+//   if (boxes[i] == "nemo") {
+//     console.log("Found Nemo");
+//   };
+// };
+
+// findingNemo_2(boxes);
