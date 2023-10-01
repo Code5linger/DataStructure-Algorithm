@@ -109,7 +109,7 @@ function anotherFunChallenge(input) {
 anotherFunChallenge(); //BIG O(4 + 7n)
 
 //#1 -- For loop in Javascript.
-const fish = ["dory", "bruce", "marlin", "nemo"];
+const fish = ["dory", "nemo", "bruce", "marlin"];
 const nemo = ["nemo"];
 const everyone = [
   "dory",
@@ -130,8 +130,10 @@ function findNemo2(array) {
   //
   let t0 = performance.now();
   for (let i = 0; i < array.length; i++) {
+    console.log("loop");
     if (array[i] === "nemo") {
       console.log("Found NEMO!");
+      break;
     }
   }
   //
@@ -139,4 +141,4 @@ function findNemo2(array) {
   console.log("Call to find Nemo took " + (t1 - t0) + " milliseconds.");
 }
 
-findNemo2(large);
+findNemo2(fish);
